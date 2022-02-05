@@ -42,7 +42,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
   min-height: 100vh;
   padding: 1rem 0.5rem;
 }
@@ -53,6 +52,10 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
+.second-page-c{
+  margin-top: 1.5em;
+} 
 
 .thumb-container {
   display: flex;
@@ -139,12 +142,13 @@ p{
   font-size: .8em;
 }
 
-.App{
+/* .App{
   background-image: linear-gradient( to bottom right, rgb(168, 167, 167), rgb(255, 255, 255));
-}
+} */
 
 html, body {
   margin: 0;
   padding: 0;
+  background-image: linear-gradient( to bottom right, rgb(168, 167, 167), rgb(255, 255, 255));
 } 
 

@@ -30,7 +30,7 @@ const PokeDetail = ({name}) => {
 
 
     return (
-        <div>
+        <div class="second-page-c">
         <h1>{thumbName.charAt(0).toUpperCase() + thumbName.slice(1)}</h1>
         <div className="all-container" >
           {allPokemon.map( (pokemonStats, index) => 
