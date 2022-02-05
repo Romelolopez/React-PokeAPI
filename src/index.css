@@ -44,9 +44,7 @@ a:hover {
   align-items: center;
   /* justify-content: center; */
   min-height: 100vh;
-  padding: 3rem 0.5rem;
-  
-
+  padding: 1rem 0.5rem;
 }
 
 .all-container {
@@ -94,14 +92,14 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 1.6em;
   flex-direction: column;
   background-color: white;
   border-style: ridge;
   border-color:yellow;
   border-radius: 5px;
-  height: 200px;
-  width: 226px;
+  height: 12.500em;
+  width: 14.125em;
 }
 
 .atribute:nth-child(odd){
@@ -110,8 +108,8 @@ a:hover {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   flex-wrap: wrap;
-  height: 50px;
-  width: 226px;
+  height: 3.125em;
+  width: 14.125em;
   background-color: rgb(178, 241, 178);
 }
 
@@ -121,24 +119,26 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
-  height: 50px;
-  width: 226px;
+  height: 3.125em;
+  width: 14.125em;
   background-color: rgb(96, 233, 96);
 }
 
-
+.title-img{
+  height: 5em;
+}
 
 
 .pokemon-container {
   margin-top: 10px;
 }
 
-.title{
+/* .title{
   margin-top: -30px;
-}
+} */
 
 p{
-  margin-top: -30px;
+  font-size: .8em;
 }
 
 .App{
@@ -150,18 +150,3 @@ html, body {
   padding: 0;
 } 
 
-/* 
-.thumb-container .number {
-  border-radius: 1rem;
-  padding: 0.2rem 0.4rem;
-  background-color: rgba(255,255,255,0.3);
-}
-
-.thumb-container img {
-  width: 120px;
-  height: 120px;
-}
-
-.thumb-container small {
-  text-transform: capitalize;
-} */
