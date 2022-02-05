@@ -72,7 +72,7 @@ const App = (props) => {
         <Route> 
         <div>
         <img src="PokeDex.png" class="title-img" alt="pokedex"/>
-      </div>
+        </div>
         <p>(Click pokemon name to see details)</p>
         <div className="pokemon-container">
           <div className="all-container" >
