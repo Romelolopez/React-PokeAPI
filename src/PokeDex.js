@@ -27,6 +27,7 @@ const App = (props) => {
       result.forEach(async (pokemon) => {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
         const data = await res.json()
+        console.log(data)
 
         //allPokemon is an array. if you just add "data" to setAllPokemon it will only add one at a time
         //So we must use dot notation to add each individual pokemon to the currentList 
@@ -63,38 +64,37 @@ const App = (props) => {
     
   return (
     <div>
-      
-    
       <Router>
-      <div className="app-container">
-        <Switch>
-        <Route path="/PokeDetail" component={() => <PokeDetail name={pokeName} />} />
-        <Route> 
-        <div>
-        <img src="PokeDex.png" class="title-img" alt="pokedex"/>
-        </div>
-        <p>(Click pokemon name to see details)</p>
-        <div className="pokemon-container">
-          <div className="all-container" >
-            {/* the only way I could figure to sort the map was to sort it during the map  */}
-            {allPokemon.sort((a, b) => a.id - b.id).map( (pokemonStats, index) => 
-              <PokemonThumb 
-              
-                key={index}
-                id={pokemonStats.id}
-                image={pokemonStats.sprites.other.dream_world.front_default}
-                pokeDexName={pokemonStats.name}
-                type={pokemonStats.types[0].type.name}
-                childToParent={childToParent}
-          
-              />)}
-            
-          </div> 
-            <button className="load-more" onClick={() => getAllPokemon()}>Load more</button>
-        </div>
-        </Route>
-        </Switch>
-      </div>
+    	<div className="app-container">
+			<Switch>
+				<Route path="/PokeDetail" component={() => <PokeDetail name={pokeName} />} />
+			<Route> 
+			<div>
+				<img src="PokeDex.png" class="title-img" alt="pokedex"/>
+			</div>
+				<p>(Click pokemon name to see details)</p>
+			<div className="pokemon-container">
+				<div className="all-container" >
+					{/* the only way I could figure to sort the map was to sort it during the map  */}
+					{allPokemon.sort((a, b) => a.id - b.id).map( (pokemonStats, index) => 
+					<PokemonThumb 
+					
+						key={index}
+						id={pokemonStats.id}
+						image={pokemonStats.sprites.other.dream_world.front_default}
+						pokeDexName={pokemonStats.name}
+						type={pokemonStats.types[0].type.name}
+						childToParent={childToParent}
+				
+					/>)}
+					
+				</div> 
+				
+				<button className="load-more" onClick={() => getAllPokemon()}>Load more</button>
+			</div>
+			</Route>
+			</Switch>
+    	</div>
       </Router>
     </div>
   );

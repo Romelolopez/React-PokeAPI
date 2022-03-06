@@ -1,5 +1,4 @@
 import PokeDex from "./PokeDex"
-import './App.css';
 
 
 function App() {

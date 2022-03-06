@@ -38,24 +38,27 @@ a:hover {
      color: #00F
 }
 
-.app-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding: 1rem 0.5rem;
-}
 
-.all-container {
+
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(190, 187, 187);
+  height: 100%;
+} 
+
+  .app-container{
+   text-align: center;
+   height: 100%;
+ }
+
+ .all-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 1rem 0.5rem;
 }
-
-.second-page-c{
-  margin-top: 1.5em;
-} 
 
 .thumb-container {
   display: flex;
@@ -75,6 +78,28 @@ a:hover {
   width: 120px;
   height: 120px;
 }
+
+
+
+.second-page-c{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+} 
+
+.poke-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
 
 .dImg {
   width: 226px;
@@ -136,19 +161,9 @@ a:hover {
   margin-top: 10px;
 }
 
-
-
 p{
   font-size: .8em;
 }
+ 
 
-/* .App{
-  background-image: linear-gradient( to bottom right, rgb(168, 167, 167), rgb(255, 255, 255));
-} */
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient( to bottom right, rgb(168, 167, 167), rgb(255, 255, 255));
-} 
 
