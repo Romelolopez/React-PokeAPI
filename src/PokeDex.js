@@ -45,7 +45,7 @@ const App = (props) => {
   
 
     useEffect(() => {
-      
+      window.scrollTo(0, 0)
       getAllPokemon()
       
     //if there is a state in the square brackets and it changes, useEffect runs again. if brackets are empty, useEffect runs once

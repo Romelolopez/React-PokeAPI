@@ -12,7 +12,7 @@ const PokeDetail = ({name}) => {
 
 
   useEffect(() => {
-
+    window.scrollTo(0, 0)
     async function getAllPokemonInfo(){
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${thumbName}`)
         const data = await res.json()
