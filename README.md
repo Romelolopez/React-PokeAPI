@@ -1,7 +1,7 @@
 # React-PokeAPI
 <div align="center">
-  <img src="https://live.staticflickr.com/65535/51909125460_ab0acf6b52_w.jpg" width="400" height="336" alt="Screen Shot 2022-02-27 at 9.03.58 PM">
-  <img src="https://live.staticflickr.com/65535/51908498221_7584e2ef07_w.jpg" width="400" height="336" alt="Screen Shot 2022-02-27 at 9.04.28 PM">
+  <img src="https://user-images.githubusercontent.com/48486610/156933427-71883b0a-f6bb-4a5e-9e85-56ecdf9c3d87.png"  height="336" alt="Screen Shot 2022-02-27 at 9.03.58 PM">
+  <img src="https://user-images.githubusercontent.com/48486610/156933448-c45df6e2-4240-49c6-a1f6-a9ef6e61688f.png"  height="336" alt="Screen Shot 2022-02-27 at 9.04.28 PM">
   <p>Fetching data from POKEAPI using React.JS, HTML, CSS</p> 
 </div>
 
